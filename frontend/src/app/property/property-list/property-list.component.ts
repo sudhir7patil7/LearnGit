@@ -11,17 +11,18 @@ import { HousingService } from 'src/app/services/housing.service';
 })
 export class propertyListComponent implements OnInit {
 
-  properties: any;
+  //properties: Array<IProperty>;
   constructor(private housingService:HousingService) {}
   ngOnInit(): void {
-      this.housingService.getAllPropertoes().subscribe(
-            data=>{
-           this.properties=data;
-           console.log(data );
-         } ,error=>
-          {
-            console.log(error);
-          }
-      );
+      // this.housingService.getAllPropertoes().subscribe(
+      //       data=>{
+      //      this.properties=data;
+      //      console.log(data );
+      //    } ,error=>
+      //     {
+      //       console.log('httperror');
+      //       console.log(error);
+      //     }
+     // );
  }
 }
